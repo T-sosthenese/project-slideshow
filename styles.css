@@ -1,0 +1,71 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide page overflow */
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+/* Individual Slide */
+.slide {
+    display: none; /* Hide slides by default */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+}
+
+/* Image styles */
+img {
+    width: 100%; /* Ensure images fill their containers */
+    height: 100%; /* Ensure images fill their containers */
+    object-fit: cover; /* Maintain aspect ratio while covering */
+}
+
+/* Overlay for Project Description */
+.overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dot Navigation at Footer */
+.footer-dots {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+.dots {
+    text-align: center;
+}
+
+/* Individual Dot */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: #bbb; /* Default color */
+    border-radius: 50%; /* Circular shape */
+    display: inline-block;
+    transition: background-color 0.6s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+/* Active Dot */
+.dot.active {
+    background-color: #717171; /* Active color */
+}

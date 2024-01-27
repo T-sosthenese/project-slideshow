@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Project 1 Slide -->
+        <div class="slide fade">
+            <img src="images/cake-raffle-app.PNG" alt="Project 1 Image">
+            <!-- Overlay for Project 1 -->
+            <div class="overlay">
+                <h2>Cake Raffle App</h2>
+                <p>The Cake Raffle app is a fun and interactive way for users to participate in raffles and potentially 
+                    win delicious cakes. Users can easily enter their names into the raffle, and the app randomly selects 
+                    a winner from the pool of participants. The app ensures fairness and transparency in the selection process.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 2 Slide -->
+        <div class="slide fade">
+            <img src="images/gif-gala.PNG" alt="Project 2 Image">
+            <!-- Overlay for Project 2 -->
+            <div class="overlay">
+                <h2>Gif Gala</h2>
+                <p>This unique event brings together individuals from all walks of life to celebrate the universal 
+                    language of emojis in a fun and interactive way. Participants unleash their creativity by 
+                    transforming into their chosen emojis, from the iconic smiley faces to the beloved animal 
+                    characters and everything in between.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 3 Slide -->
+        <div class="slide fade">
+            <img src="images/all-my-subscriptions.PNG" alt="Project 3 Image">
+            <!-- Overlay for Project 3 -->
+            <div class="overlay">
+                <h2>BarkerBox</h2>
+                <p>"BarkerBox" is an innovative subscription service designed to cater to the needs and preferences 
+                    of beloved furry companions. This service offers a curated selection of high-quality toys, 
+                    treats, and accessories tailored to dogs of all breeds, sizes, and ages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dot Navigation at Footer -->
+    <div class="footer-dots">
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
